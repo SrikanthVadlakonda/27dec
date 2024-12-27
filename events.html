@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Example: Color Changer</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Event Example: Change Box Color</h1>
+        <select id="colorSelector">
+            <option value="" disabled selected>Select a Color</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+        </select>
+        <button onclick="changeColor()">Change Color</button>
+        <div class="color-box" id="colorBox"></div>
+    </div>
+    <script src="events.js"></script>
+</body>
+</html>

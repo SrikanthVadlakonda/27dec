@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Expense Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            max-width: 600px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .balance, .expense {
+            margin: 10px 0;
+        }
+        .balance span, .expense span {
+            font-weight: bold;
+            color: #333;
+        }
+        .form-control {
+            margin: 10px 0;
+        }
+        #transaction-list {
+            list-style: none;
+            padding: 0;
+        }
+        #transaction-list li {
+            display: flex;
+            justify-content: space-between;
+            background: #f4f4f4;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .delete-btn {
+            background: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personal Expense Tracker</h1>
+    <h2>Balance: ₹<span id="balance">5000</span></h2>
+    <h2>Expenses: ₹<span id="expense">0</span></h2>
+
+    <form id="transaction-form">
+        <div class="form-control">
+            <label for="description">Description</label>
+            <input type="text" id="description" placeholder="Enter item description">
+        </div>
+        <div class="form-control">
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" placeholder="Enter item cost">
+        </div>
+        <button type="submit">Add Transaction</button>
+    </form>
+
+    <ul id="transaction-list"></ul>
+
+    <script src="expenses.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+/* Keep the same styles as before but add styling for the new features */
+.filters {
+    margin: 20px 0;
+}
+
+.filters h3 {
+    margin-bottom: 10px;
+}
+
+.filters select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
